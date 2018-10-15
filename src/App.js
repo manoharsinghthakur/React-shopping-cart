@@ -1,26 +1,32 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
 import './App.css';
+import HeaderComponent from './HeaderComponent';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+
+  <div className="App">
+        <div className="App-header">
+          Online  Shopping  Application <br/>
+            <div className="App-logo">
+                    <img src="./yash_logo.PNG" ></img>
+            </div>
+            <div className="App-navigation">
+                    <HeaderComponent />
+            </div>
+        
+        </div>
+        
+        <div className="App-footer">
+        <hr/>
+        <footer>
+          (c) Copyright Yash Technologies
+        </footer>
+        </div>
       </div>
+
     );
   }
 }
